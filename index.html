@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Logo Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>My Logo Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Creative Logo Designer</h2>
+    <p>I design unique and professional logos for brands & businesses.</p>
+    <button onclick="document.getElementById('portfolio').scrollIntoView({behavior:'smooth'})">View My Work</button>
+  </section>
+
+  <section id="about" class="about">
+    <img src="images/designer.jpg" alt="Designer Photo">
+    <div>
+      <h2>About Me</h2>
+      <p>Hello! I’m a passionate logo designer. I love creating simple, modern, and effective logos that help businesses stand out. My goal is to deliver designs that match your brand identity perfectly.</p>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>My Work</h2>
+    <div class="portfolio-grid" id="portfolio-grid">
+      <!-- Portfolio items will be dynamically loaded by script.js -->
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 My Logo Portfolio | All Rights Reserved</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
